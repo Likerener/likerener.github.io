@@ -1,0 +1,82 @@
+GenAI Usage - ChatGPT 5
+
+1: Include Modal starter code:
+
+To start with, let's use this Modal
+
+Set the id of the Modal to be event_modal
+
+give me a modal skeleton for that, dont included any code.
+
+Here’s a clean modal skeleton outline (no code, just structure) that matches your request. You can later fill in the Bootstrap/HTML details yourself:
+Modal Skeleton (id = event_modal)
+Wrapper
+Modal container (with id="event_modal")
+Accessibility attributes (dialog role, aria labels, etc.)
+Dialog Box
+Centered modal dialog
+Content Section
+Header
+Title placeholder (e.g., “Event Details”)
+Close button
+Body
+Space for form fields or text (e.g., event name, date, time, etc.)
+Footer
+Action buttons (e.g., Save, Cancel)
+
+3: Validation:
+
+For each event that is created/updated, there should certain fields, like name of the event, time of the event etc., that should be filled for the event to make practical sense. Add appropriate validations to your event modal fields. Refer to this resource to learn about the various validations that are available.
+
+One validation that you MUST implement for this lab:
+
+The value entered in "Remote URL" field is actually a URL. This can be done by specifying a regular expression for URL in the the pattern attribute of the input element. Here is an example of how to use the pattern attribute:
+<input type="text" pattern="^[A-Z].+" />
+
+so for this one just put this example in our code right?
+
+Yes - That's correct.
+
+but I still dont understand here pattern="^[A-Z].+"
+
+The meaning of this regular expression is that the input must begin with a capital letter (^[A-Z]), followed by any character (. +). It is just a demonstration example of how to write the pattern attribute, not specifically for URL.
+
+
+INFO
+If you refresh your browser window as you are testing these functions, the newly created calendar events(if any) will disappear, from the UI and the JS array because these changes to the HTML DOM are in-memory, which is cleared when you reload a page.
+
+Why?
+
+All the data you have written now (events array + cards on the page) are stored in the browser memory.
+
+Why is it gone after refreshing?
+
+Events array
+
+You wrote let events = []; in script.js
+
+This array only exists in the memory when the current web page is running.
+
+When you refresh the page, the whole JavaScript will be re-executed, and events will be initialized as an empty array [].
+
+Event card in DOM
+
+When you click "Save Event", the event card is added to HTML through appendChild().
+
+These elements are not stored in files, but "DOM temporarily hanging in memory".
+
+When the page is refreshed, the browser will reload the index.html file → DOM structure regenerate → the event card you manually added before will be gone.
+
+Summary
+
+This is the expected behavior, not the problem of your code.
+
+Because the goal of lab is only to practice DOM operation + JS data structure, so data persistence is not done.
+
+If you want to "still after refreshing", you need to save the data in a more lasting place, such as:
+
+localStorage/sessionStorage
+
+Back-end database
+
+

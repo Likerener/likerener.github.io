@@ -1,0 +1,62 @@
+h1 {
+  text-align: center;
+  padding-top: 2%;
+}
+
+body {
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.event:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+#calendar {
+  height: 100vh !important;
+}
+
+.custom-container {
+  width: 100%;
+  padding: 20%;
+}
+
+.event {
+  background: #f8f9fa;
+}
+
+
+.cat-academic {
+  background: #ff7700;
+  border-color: #2b7120;
+}
+
+.cat-work {
+  background: #bbc807;
+  border-color: #f6b6b6;
+}
+
+.cat-personal {
+  background: #042bf1;
+  border-color: #bfe3ff;
+}
+
+.cat-vacation {
+  background: #6b0bd2;
+  border-color: #f7ff0e;
+}
+
+.cat-sports {
+  background: #e7d7ff;
+  border-color: #d0beff;
+}
+
+.cat-other {
+  background: #0ac2d6;
+  border-color: #b50c0c;
+}

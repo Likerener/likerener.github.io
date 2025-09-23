@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home - Likerener's Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
+
+
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+
+    <body class="stick-footer">
+
+
+        <section id="splash" class="sr-hero" aria-hidden="true">
+            <canvas id="sr-canvas"></canvas>
+            <div class="sr-title" id="sr-title" aria-label="Likerener">
+                <!-- 这里的字母可以改，比如 L I K E R E N E R / LR / 你的中文名等 -->
+                <span>L</span><span>I</span><span>K</span><span>E</span><span>R</span><span>E</span><span>N</span><span>E</span><span>R</span>
+            </div>
+        </section>
+
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand active" href="home.html">Likerener</a> -->
+                <a class="navbar-brand" href="home.html" id="navBrand">Likerener</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    </ul>
+                    <!-- Right-side icon -->
+                    <span class="navbar-text">
+                        <img src="../resources/img/Likerener.jpeg" alt="Me"
+                            style="width:40px; height:40px; border-radius:50%; object-fit:cover;">
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- Main Content -->
+        <main>
+            <section class="wall-wrapper">
+                <div class="wall">
+
+                    <div class="tile p3x4">
+                        <img class="cover" src="../resources/img/IMG_5361.jpeg" alt="Poster 1">
+                    </div>
+
+
+                    <div class="tile p1x3 text-block">
+                        <div class="tt">
+                            <h2 class="tt-sub">I'm Qinzhengfang Li 李秦正芳</h2>
+                            <h2 class="tt-sub">李可人儿 Amor Fati 命运之爱 💜</h2>
+
+                            <figure class="portrait">
+                                <img src="../resources/img/keer.jpeg" alt="Landscape">
+                            </figure>
+
+                            <p class="tt-desc">You are invited! 欢迎来到本可的网站🙄💅</p>
+                            <p class="tt-desc">It's Likerener's World and You are lucky to be get in it.</p>
+                            <p class="tt-desc">I'm an undergraduate student majoring in Computer Science at the
+                                University of Colorado Boulder.</p>
+                            <p class="tt-desc">Likerener Amor Fati 💜</p>
+                            <p class="mt-3">
+                                <a href="resume.html" class="btn btn-primary btn-sm">View Resume</a>
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="tile">
+                        <img class="fit-vertical" src="../resources/img/IMG_5570.jpeg" alt="Landscape">
+                    </div>
+                    <div class="tile">
+                        <img class="fit-vertical" src="../resources/img/IMG_8851.jpeg" alt="Landscape">
+                    </div>
+                    <!-- <div class="tile p2x3">
+                        <img class="fit-vertical" src="../resources/img/IMG_5570.jpg" alt="Landscape">
+                    </div>
+
+                    <div class="tile p2x3">
+                        <img class="fit-vertical" src="../resources/img/IMG_8851.JPG" alt="Landscape">
+                    </div>
+                </div> -->
+            </section>
+        </main>
+
+        <!-- <main class="section"> -->
+        <!-- <section class="free-grid">
+            <div class="grid-item img-only">
+                <img src="../resources/img/keer.JPG" alt="Poster">
+            </div>
+
+            <div class="grid-item text-only bg-yellow">
+                <h3>Projects</h3>
+                <p>Illustration & Layout</p>
+            </div>
+
+            <div class="grid-item mix bg-rose">
+                <img src="../resources/img/project2.jpg" alt="Scene">
+                <p>Workshop Scenes</p>
+            </div>
+
+            <div class="grid-item big">
+                <img src="../resources/img/project3.jpg" alt="Big Illustration">
+            </div>
+        </section> -->
+
+        <!-- <main class="wall">
+                <div class="tile p3x4">
+                    <img class="cover" src="../resources/img/keer.JPG" alt="Poster 1">
+                </div> -->
+
+        <!-- 纯色竖块 + 文字 -->
+        <!-- <div class="tile p2x3" style="background:#d6c2dd
+                    ; display:flex; align-items:center; justify-content:center; text-align:center;">
+                    <div>
+                        <h3 style="margin:0; color:#694696;">Likerener Amor Fati 💜</h3>
+                        <h4 style="margin:0; color:#694696;">李可人儿 Amor Fati 命运之爱 💜</h4>
+                        <p style="margin-top:6px; color:#694696; opacity:.8;">You are invited!!! 欢迎来到本可的网站🙄💅</p>
+                        <p style="margin-top:6px; color:#694696; opacity:.8;">It's a Likerener's World and You are lucky
+                            to be get in it.</p>
+                    </div>
+                </div> -->
+        <!-- 纯色竖块 + 文字（仍然是 p2x3 的竖卡片） -->
+        <!-- <div class="tile p2x3 text-block">
+                    <div class="tt">
+                        <h2 class="tt-title">Likerener Amor Fati 💜</h2>
+                        <h3 class="tt-sub">李可人儿 Amor Fati 命运之爱 💜</h3>
+                        <p class="tt-desc">You are invited!!! 欢迎来到本可的网站🙄💅</p>
+                        <p class="tt-desc">It's a Likerener's World and You are lucky to be get in it.</p>
+                    </div>
+                </div> -->
+
+        <!-- 横图也被放进竖卡片：不会“横着撑满”，而是竖框内自适应 -->
+        <!-- <div class="tile">
+                    <img class="fit-vertical" src="../resources/img/IMG_5570.jpg" alt="Landscape">
+                </div>
+                <div class="tile">
+                    <img class="fit-vertical" src="../resources/img/IMG_8851.JPG" alt="Landscape">
+                </div> -->
+
+
+        <!-- 偶尔一个方块，制造不规则感 -->
+        <!-- <div class="tile square"
+                style="background:#FFB3C1; display:flex; align-items:center; justify-content:center;">
+                <h3 style="margin:0; color:#55268a;">Scene</h3>
+            </div> -->
+
+        <!-- 再来一些竖比例卡片 -->
+        <!-- <div class="tile p2x3"><img src="../resources/img/poster2.jpg" alt=""></div>
+            <div class="tile p3x4"><img src="../resources/img/poster3.jpg" alt=""></div> -->
+        <!-- </main> -->
+
+
+
+
+
+
+        <!-- <div class="container">
+
+            <div class="row g-4 align-items-stretch">
+
+                <div class="col-12 col-lg-6">
+                    <img src="../resources/img/keer.JPG" alt="WeChat" class="img-fluid rounded shadow-sm">
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="about-card h-100">
+                        <h2>Hello, I'm Qinzhengfang Li 李秦正芳</h2>
+                        <h2>李可人儿 Amor Fati 命运之爱 💜</h2>
+                        <h2>Likerener Amor Fati BR 💜</h2>
+                        <h2>You are invited!!! 欢迎来到本可的网站🙄💅</h2>
+                        <h2>It's a Likerener's World and You are lucky to be get in it</h2>
+                        <p>
+                            I am a undergraduate student majoring in Computer Science at the University of Colorado
+                            Boulder.
+                            Welcome to my webstie!
+                        </p>
+                        <p>
+                            Check out my <a href="resume.html" class="btn btn-primary">Resume</a>
+                        </p>
+                    </div>
+                </div> -->
+        </main>
+
+        <!-- Footer -->
+        <!-- Footer（全宽） -->
+        <footer class="site-footer bg-dark text-center p-3 mt-4">
+            <div class="d-flex justify-content-center align-items-center gap-3">
+                <span class="footer-text"></span>
+                <a href="https://github.com/Likerener" target="_blank" rel="noopener" class="footer-link"
+                    aria-label="GitHub">
+                    <i class="fa-brands fa-github fa-lg"></i>
+                </a>
+                <a href="../resources/img/WeChat.jpeg" target="_blank" rel="noopener" class="footer-link"
+                    aria-label="WeChat">
+                    <i class="fa-brands fa-weixin fa-lg"></i>
+                </a>
+            </div>
+        </footer>
+
+        <!-- <script>
+        (function () {
+            const splash = document.getElementById('splash');
+            // 页面加载后等待 3 秒，然后淡出
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    splash.classList.add('splash-fade');
+                    // 动画结束后移除节点，避免挡住点击
+                    splash.addEventListener('animationend', () => splash.remove());
+                }, 1000); // 3000 毫秒 = 3 秒
+            });
+        })();
+    </script> -->
+
+        <!-- <script>
+        (() => {
+            const splash = document.getElementById('splash');
+            const canvas = document.getElementById('ballCanvas');
+            if (!splash || !canvas) return;
+
+            const ctx = canvas.getContext('2d');
+            const DPR = Math.max(1, window.devicePixelRatio || 1);
+
+            // 适配尺寸
+            function resize() {
+                const { width, height } = canvas.getBoundingClientRect();
+                canvas.width = Math.round(width * DPR);
+                canvas.height = Math.round(height * DPR);
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            // 小球参数（可按喜好微调）
+            let ball = {
+                x: canvas.width * 0.25,
+                y: canvas.height * 0.35,
+                vx: 3.2 * DPR,
+                vy: 1.8 * DPR,
+                r: 18 * DPR
+            };
+            const gravity = 0.18 * DPR;   // 重力
+            const bounce = 0.85;         // 反弹衰减
+            const friction = 0.995;        // 水平摩擦
+            const maxTrail = 18;
+            const trail = [];
+
+            // 动画主循环
+            function tick() {
+                // 半透明叠加 = 轨迹发光感
+                ctx.fillStyle = 'rgba(10, 20, 50, 0.10)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                // 物理更新
+                ball.vy += gravity;
+                ball.x += ball.vx;
+                ball.y += ball.vy;
+
+                // 碰撞边界
+                // 右/左
+                if (ball.x + ball.r > canvas.width) { ball.x = canvas.width - ball.r; ball.vx *= -bounce; }
+                if (ball.x - ball.r < 0) { ball.x = ball.r; ball.vx *= -bounce; }
+                // 下/上
+                if (ball.y + ball.r > canvas.height) { ball.y = canvas.height - ball.r; ball.vy *= -bounce; ball.vx *= friction; }
+                if (ball.y - ball.r < 0) { ball.y = ball.r; ball.vy *= -bounce; }
+
+                // 记录轨迹
+                trail.push({ x: ball.x, y: ball.y });
+                if (trail.length > maxTrail) trail.shift();
+
+                // 画轨迹
+                for (let i = 0; i < trail.length; i++) {
+                    const t = i / (trail.length - 1 || 1);
+                    const rr = ball.r * (0.35 + 0.65 * t); // 由小到大
+                    ctx.beginPath();
+                    ctx.fillStyle = `rgba(255,255,255,${0.05 + 0.12 * t})`;
+                    ctx.arc(trail[i].x, trail[i].y, rr, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+
+                // 画主球（内发光）
+                const grad = ctx.createRadialGradient(ball.x - ball.r * 0.4, ball.y - ball.r * 0.4, ball.r * 0.2, ball.x, ball.y, ball.r);
+                grad.addColorStop(0, 'rgba(255,255,255,0.95)');
+                grad.addColorStop(1, 'rgba(255,255,255,0.30)');
+                ctx.beginPath();
+                ctx.fillStyle = grad;
+                ctx.arc(ball.x, ball.y, ball.r, 0, Math.PI * 2);
+                ctx.fill();
+
+                raf = requestAnimationFrame(tick);
+            }
+
+            let raf = requestAnimationFrame(tick);
+
+            // 自动进入主页：等待几秒，然后淡出并移除 splash
+            window.addEventListener('load', () => {
+                const STAY_MS = 3200; // 停留时间：3.2s（改大=更久）
+                setTimeout(() => {
+                    splash.classList.add('splash-fade');
+                    splash.addEventListener('animationend', () => {
+                        cancelAnimationFrame(raf);
+                        splash.remove();
+                    }, { once: true });
+                }, STAY_MS);
+            });
+        })();
+    </script> -->
+        <script>
+            (() => {
+                const splash = document.getElementById('splash');
+                const canvas = document.getElementById('sr-canvas');
+                if (!splash || !canvas) return;
+
+                const ctx = canvas.getContext('2d');
+                const DPR = Math.max(1, window.devicePixelRatio || 1);
+
+                function resize() {
+                    const r = canvas.getBoundingClientRect();
+                    canvas.width = Math.round(r.width * DPR);
+                    canvas.height = Math.round(r.height * DPR);
+                }
+                resize();
+                window.addEventListener('resize', resize);
+
+
+                function playIntro() {
+                    const STAY_MS = 1500;
+                    setTimeout(() => {
+                        splash.classList.add('sr-fade');
+                        splash.addEventListener('animationend', () => {
+                            cancelAnimationFrame(raf);
+                            splash.remove();
+                        }, { once: true });
+                    }, STAY_MS);
+                }
+
+
+                if (!sessionStorage.getItem("introPlayed") || sessionStorage.getItem("forceIntro")) {
+                    window.addEventListener('load', () => {
+                        playIntro();
+                        sessionStorage.setItem("introPlayed", "true");
+                        sessionStorage.removeItem("forceIntro");
+                    });
+                } else {
+                    splash.remove();
+                }
+
+
+                document.addEventListener("DOMContentLoaded", () => {
+                    const brand = document.getElementById("navBrand");
+                    if (brand) {
+                        brand.addEventListener("click", () => {
+                            sessionStorage.setItem("forceIntro", "true");
+                        });
+                    }
+                });
+            })();
+        </script>
+
+
+
+        <!-- Bootstrap JS bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    </body>
+
+
+
+</html>

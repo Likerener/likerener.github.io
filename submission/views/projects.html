@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home - Likerener's Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
+
+
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- <body class="page"> -->
+
+<!-- Navigation Bar -->
+
+<body class="page stick-footer">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Likerener</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                </ul>
+                <!-- Right-side icon -->
+                <span class="navbar-text">
+                    <img src="../resources/img/Likerener.jpeg" alt="Me"
+                        style="width:40px; height:40px; border-radius:50%; object-fit:cover;">
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main class="container my-5">
+
+        <h2 class="text-center mb-4">My Projects</h2>
+
+        <div class="accordion" id="projectsAccordion">
+
+            <!-- Project 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Project 1: Personal Website
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="../resources/img/Likerener.jpeg" alt="Project 1" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-8">
+                                <p>Project 1: Building a personal website using HTML, CSS, and
+                                    Bootstrap.</p>
+                                <p>It includes a Home page, Hobbies page, Projects page, and Resume page, all
+                                    responsive and styled with purple theme.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Project 2: File System Simulator
+                    </button>
+                </h2>
+
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                        <div class="row g-3 align-items-start">
+
+                            <div class="col-md-4">
+                                <a href="https://github.com/cu-csci-2270-fall-2024/final-project-likerener.git"
+                                    target="_blank" rel="noopener" class="d-block">
+                                    <img src="../resources/img/Likerener.jpeg" alt="File System Simulator"
+                                        class="img-fluid rounded shadow-sm">
+                                </a>
+                            </div>
+
+                            <div class="col-md-8">
+                                <p class="mb-1 fw-semibold">
+                                    <span class="me-1">Project 2:</span>
+                                    File System Simulator
+                                </p>
+
+                                <a href="https://github.com/cu-csci-2270-fall-2024/final-project-likerener.git"
+                                    target="_blank" rel="noopener" class="d-inline-block mb-2">
+                                    GitHub Link
+                                </a>
+
+                                <ul class="mb-2">
+                                    <li>Developed a file system simulator in C++ that supports essential file operations
+                                        such as
+                                        creation, deletion, and retrieval.</li>
+                                    <li>Implemented multiple data structures:</li>
+                                </ul>
+                                <ul class="ms-4 mb-2">
+                                    <li>Hash Tables with linear probing, quadratic probing, and chaining for efficient
+                                        file
+                                        indexing.</li>
+                                    <li>Linked Lists for dynamic memory management and efficient file handling.</li>
+                                    <li>Tree Structures for hierarchical file organization and directory management.
+                                    </li>
+                                </ul>
+                                <ul class="mb-0">
+                                    <li>Optimized hash table performance by dynamically resizing based on load factors,
+                                        reducing
+                                        collision overhead.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Project 3: Candy Land
+                    </button>
+                </h2>
+
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                        <div class="row g-3 align-items-start">
+
+                            <div class="col-md-4">
+                                <img src="../resources/img/Likerener.jpeg" alt="Candy Land"
+                                    class="img-fluid rounded shadow-sm">
+                            </div>
+
+                            <div class="col-md-8">
+                                <p class="mb-1 fw-semibold">
+                                    <span class="me-1">Project 3:</span>
+                                    Candy Land
+                                </p>
+
+                                <ul class="mb-2">
+                                    <li>The primary goal was to create an engaging and dynamic board game called
+                                        "Candyland"
+                                        implemented by using object-oriented programming principles in C++. Key elements
+                                        included
+                                        character selection, tile navigation with color-coded cards, stamina management,
+                                        candy
+                                        stores, and various gameboard events.</li>
+                                    <li>The game utilized arrays and vectors to store characters, candies, and board
+                                        tiles, while
+                                        file I/O was used to load game data dynamically. Random number generation played
+                                        a crucial
+                                        role in determining events such as hidden treasures and calamities. The
+                                        objective was to
+                                        make each game session unique by providing diverse characters, a variety of
+                                        candies with
+                                        different effects, and dynamic gameboard interactions, ensuring an engaging and
+                                        unpredictable experience for players.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-dark text-center p-3 mt-4">
+        <div class="d-flex justify-content-center align-items-center gap-3">
+            <span class="footer-text"></span>
+            <a href="https://github.com/Likerener" target="_blank" rel="noopener" class="footer-link"
+                aria-label="GitHub">
+                <i class="fa-brands fa-github fa-lg"></i>
+            </a>
+            <a href="../resources/img/WeChat.jpeg" target="_blank" rel="noopener" class="footer-link"
+                aria-label="WeChat">
+                <i class="fa-brands fa-weixin fa-lg"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

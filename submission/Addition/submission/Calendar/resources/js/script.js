@@ -1,16 +1,38 @@
 let editingIndex = null;
 
+// function updateLocationOptions() {
+//     const modality = document.getElementById('event_modality').value;
+//     const locGroup = document.getElementById('group_location');
+//     const urlGroup = document.getElementById('group_remote_url');
+
+//     if (modality === 'in-person') {
+//         locGroup.style.display = '';
+//         urlGroup.style.display = 'none';
+//     } else {
+//         urlGroup.style.display = '';
+//         locGroup.style.display = 'none';
+//     }
+// }
+
 function updateLocationOptions() {
     const modality = document.getElementById('event_modality').value;
     const locGroup = document.getElementById('group_location');
     const urlGroup = document.getElementById('group_remote_url');
+    const locInput = document.getElementById('event_location');
+    const urlInput = document.getElementById('event_remote_url');
 
     if (modality === 'in-person') {
         locGroup.style.display = '';
         urlGroup.style.display = 'none';
+        locInput.required = true;
+        urlInput.required = false;
+        urlInput.classList.remove('is-invalid');
     } else {
         urlGroup.style.display = '';
         locGroup.style.display = 'none';
+        urlInput.required = true;
+        locInput.required = false;
+        locInput.classList.remove('is-invalid');
     }
 }
 
@@ -29,9 +51,37 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+function validateForm() {
+    const form = document.getElementById('event_form');
+    const nameInput = document.getElementById('event_name');
+    const daySelect = document.getElementById('event_weekday');
+    const timeInput = document.getElementById('event_time');
+    const modality = document.getElementById('event_modality').value;
+    const locInput = document.getElementById('event_location');
+    const urlInput = document.getElementById('event_remote_url');
+
+    form.querySelectorAll('.is-invalid').forEach(el => el.classList.remove('is-invalid'));
+
+    let ok = true;
+
+    if (!nameInput.value.trim()) { nameInput.classList.add('is-invalid'); ok = false; }
+    if (!daySelect.value) { daySelect.classList.add('is-invalid'); ok = false; }
+    if (!timeInput.value) { timeInput.classList.add('is-invalid'); ok = false; }
+
+    if (modality === 'in-person') {
+        if (!locInput.value.trim()) { locInput.classList.add('is-invalid'); ok = false; }
+    } else {
+        const re = /^https?:\/\/.+/i;
+        if (!re.test(urlInput.value.trim())) { urlInput.classList.add('is-invalid'); ok = false; }
+    }
+    return ok;
+}
+
+
 const events = [];
 
 function saveEvent() {
+    if (!validateForm()) return;
 
     const name = document.getElementById('event_name').value?.trim();
     const weekday = document.getElementById('event_weekday').value;
